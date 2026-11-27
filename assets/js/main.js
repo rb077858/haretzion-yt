@@ -2,7 +2,7 @@
 (function () {
   const root = document.documentElement;
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const LOGO = `<span class="logo-disc"><img src="assets/img/logo.png" alt="" width="400" height="400"></span>`;
+  const LOGO = `<span class="logo-disc"><img src="assets/img/logo.png?v=202611270929" alt="" width="400" height="400"></span>`;
 
   const pages = [
     ["index.html", "ראשי"],
