@@ -7,10 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <link rel="preload" as="image" href="assets/img/logo.png">
+  <script>(function(){var d=document.documentElement;try{if(!sessionStorage.getItem('hey-visited')||!('onpagereveal' in window))d.classList.add('gate')}catch(e){d.classList.add('gate')}})();</script>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="demo-banner" role="status"><span class="pulse"></span>אתר דמו בלבד — אינו האתר הרשמי של ישיבת הר עציון לצעירים</div>
+  <div class="demo-banner" role="status"><span class="pulse"></span><span class="long">אתר דמו בלבד — אינו האתר הרשמי של ישיבת הר עציון לצעירים</span><span class="short">אתר דמו בלבד · לא האתר הרשמי</span></div>
 
   <section class="page-hero">
     <span class="ring r1"></span><span class="ring r2"></span>
@@ -42,26 +46,61 @@
       <h2 class="h2 reveal">בחרו את הדרך שלכם</h2>
       <p class="sub reveal">אנו בטוחים שתלמידים שלומדים לימודי חול מתוך הבנת חשיבותם — הישגיהם יראו בהתאם.</p>
       <div class="majors" style="text-align:start">
-        <div class="major agri reveal"><span class="emoji">🌱</span><span class="num">01</span><h3>חקלאות</h3><p>מדעי הצמח והקרקע, עבודה מעשית בשטח וחיבור עמוק לנופי גוש עציון.</p></div>
-        <div class="major phys reveal d1"><span class="emoji">⚛️</span><span class="num">02</span><h3>פיזיקה</h3><p>מכניקה, חשמל וחשיבה מדעית מעמיקה — במעבדה ובכיתה.</p></div>
-        <div class="major cyber reveal d2"><span class="emoji">💻</span><span class="num">03</span><h3>סייבר ותכנות</h3><p>פיתוח תוכנה, אלגוריתמיקה ואבטחת מידע ברמה גבוהה.</p></div>
+        <div class="major phys reveal"><span class="emoji">⚛️</span><span class="num">01</span><h3>פיזיקה</h3><p>מכניקה, חשמל וחשיבה מדעית מעמיקה — בכיתת הפיזיקה ובמעבדה.</p></div>
+        <div class="major cyber reveal d1"><span class="emoji">💻</span><span class="num">02</span><h3>מדעי המחשב</h3><p>פיתוח תוכנה, אלגוריתמיקה וחשיבה מערכתית ברמה גבוהה.</p></div>
+        <div class="major sys reveal d2"><span class="emoji">🔧</span><span class="num">03</span><h3>תחזוקת מערכות</h3><p>עבודה מעשית בבית המלאכה — חשמל, מכונות ומערכות.</p></div>
       </div>
-      <p class="form-note" style="margin-top:20px">* תיאורי המגמות באתר הדמו נכתבו להמחשה.</p>
+      <div class="subjects">
+        <div class="card reveal"><div class="icon">📖</div><h3>לימודי קודש</h3><p>בכל השכבות, לאורך כל השבוע.</p>
+          <ul><li>גמרא בעיון</li><li>סדר בקיאות</li><li>סדר הלכה</li><li>סדר מוסר</li><li>תנ"ך ונביא</li><li>מחשבת ישראל</li><li>הכוזרי</li><li>מסלול אמונה</li><li>צידה לדרך</li><li>אדם וביתו</li><li>דף יומי</li></ul></div>
+        <div class="card reveal d1"><div class="icon">📐</div><h3>לימודים כלליים</h3><p>לקראת בגרות מלאה, בהקבצות לפי רמה.</p>
+          <ul><li>מתמטיקה (עד 5 יח"ל)</li><li>אנגלית</li><li>לשון והבעה</li><li>ספרות</li><li>היסטוריה</li><li>מדעים</li><li>אזרחות</li><li>חינוך פיננסי</li><li>ספורט</li></ul></div>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container center">
-      <div class="kicker reveal">סדר יום (להמחשה)</div>
+  <section class="section" id="schedule">
+    <div class="container center" data-tabs>
+      <div class="kicker reveal">סדר היום</div>
       <h2 class="h2 reveal">מהבוקר ועד הלילה</h2>
-      <div class="timeline" style="text-align:start">
-        <div class="t-item reveal"><time>06:45</time><div class="box"><b>תפילת שחרית</b><p>פותחים את היום יחד בבית המדרש "אוהל שי".</p></div></div>
-        <div class="t-item reveal"><time>08:00</time><div class="box"><b>ארוחת בוקר</b><p>כוחות לפני הסדר.</p></div></div>
-        <div class="t-item reveal"><time>08:30</time><div class="box"><b>סדר בוקר — גמרא</b><p>לימוד בחברותות ושיעור עיון.</p></div></div>
-        <div class="t-item reveal"><time>12:30</time><div class="box"><b>לימודי חול ומגמות</b><p>מקצועות הבגרות, חקלאות, פיזיקה וסייבר.</p></div></div>
-        <div class="t-item reveal"><time>16:30</time><div class="box"><b>ספורט והפסקה</b><p>מגרש, חדר כושר וזמן חופשי.</p></div></div>
-        <div class="t-item reveal"><time>18:00</time><div class="box"><b>סדר ערב</b><p>תנ"ך, הלכה, מחשבה וחזרה על הלימוד.</p></div></div>
-        <div class="t-item reveal"><time>21:00</time><div class="box"><b>פנימייה</b><p>פעילות חברתית, שיחות עם המדריכים וזמן חדר.</p></div></div>
+      <p class="sub reveal">סדר יום כללי בישיבה (בקירוב), על פי מערכת השעות של שנת הלימודים הנוכחית. השיעורים המדויקים משתנים בין השכבות ט'–י"ב.</p>
+      <div class="tabs reveal" role="tablist"><span class="tab-pill"></span>
+        <button class="on" data-tab="reg" role="tab">ראשון–רביעי</button>
+        <button data-tab="thu" role="tab">חמישי</button>
+        <button data-tab="fri" role="tab">שישי</button>
+      </div>
+      <div class="pane-wrap" style="text-align:start">
+        <div class="pane on" data-pane="reg"><div class="timeline">
+          <div class="t-item"><time>06:30</time><div class="box"><b>השכמה</b> <span class="chip life">פנימייה</span><p>קמים ליום חדש.</p></div></div>
+          <div class="t-item"><time>07:00</time><div class="box"><b>תפילת שחרית וסדר הלכה</b> <span class="chip kodesh">קודש</span><p>פותחים את היום יחד בבית המדרש "אוהל שי".</p></div></div>
+          <div class="t-item"><time>07:50</time><div class="box"><b>סידור חדרים וארוחת בוקר</b> <span class="chip life">פנימייה</span><p>ארוחת בוקר ב-08:00 (בימים שני וחמישי — 08:10).</p></div></div>
+          <div class="t-item"><time>08:45</time><div class="box"><b>גמרא בעיון — שיעור וסדר</b> <span class="chip kodesh">קודש</span><p>לב היום: לימוד בחברותות ושיעור עיון, עד 11:50.</p></div></div>
+          <div class="t-item"><time>12:00</time><div class="box"><b>שיעור מחשבה / תנ"ך / אמונה</b> <span class="chip kodesh">קודש</span><p>מחשבת ישראל, הכוזרי, תנ"ך בקיאות, "צידה לדרך" ועוד — לפי השכבה.</p></div></div>
+          <div class="t-item"><time>12:50</time><div class="box"><b>ארוחת צהריים והפסקה</b> <span class="chip life">פנימייה</span><p>מנוחה, אוכל וחברים.</p></div></div>
+          <div class="t-item"><time>14:05</time><div class="box"><b>סדר מוסר ותפילת מנחה</b> <span class="chip kodesh">קודש</span><p>רגע של עבודה פנימית, ומנחה ב-14:20.</p></div></div>
+          <div class="t-item"><time>14:30</time><div class="box"><b>סדר בקיאות</b> <span class="chip kodesh">קודש</span><p>הספק והיקף בלימוד הגמרא, עד 15:30.</p></div></div>
+          <div class="t-item"><time>16:00</time><div class="box"><b>לימודים כלליים</b> <span class="chip chol">חול</span><p>מתמטיקה, אנגלית, לשון, היסטוריה, מדעים, ספרות ואזרחות — בהקבצות.</p></div></div>
+          <div class="t-item"><time>17:40</time><div class="box"><b>לימודים כלליים / מגמות / ספורט</b> <span class="chip chol">חול</span><p>שיעורים, תרגול, מגמות וספורט עם אמיר ושדי, עד הערב.</p></div></div>
+          <div class="t-item"><time>19:10</time><div class="box"><b>ארוחת ערב</b> <span class="chip life">פנימייה</span><p>כל הישיבה סביב השולחן.</p></div></div>
+          <div class="t-item"><time>19:40</time><div class="box"><b>שיחה ותפילת ערבית</b> <span class="chip kodesh">קודש</span><p>שיחה חינוכית מהצוות ותפילה משותפת.</p></div></div>
+          <div class="t-item"><time>20:00</time><div class="box"><b>סדר ערב (רשות) / דף יומי</b> <span class="chip kodesh">קודש</span><p>למי שרוצה עוד — בית המדרש פתוח.</p></div></div>
+          <div class="t-item"><time>21:00</time><div class="box"><b>פעילויות פנימייה</b> <span class="chip life">פנימייה</span><p>פעילות חברתית, שיחות עם המדריכים וזמן חדר.</p></div></div>
+          <div class="t-item"><time>22:30</time><div class="box"><b>כיבוי אורות</b> <span class="chip life">פנימייה</span><p>לילה טוב 🌙</p></div></div>
+        </div></div>
+        <div class="pane" data-pane="thu"><div class="timeline">
+          <div class="t-item"><time>08:45</time><div class="box"><b>גמרא בעיון — שיעור וסדר</b> <span class="chip kodesh">קודש</span><p>כמו בכל יום, עד 11:50.</p></div></div>
+          <div class="t-item"><time>12:00</time><div class="box"><b>שיעורי מחשבה ואמונה</b> <span class="chip kodesh">קודש</span><p>לפי השכבה — כמו "אדם וביתו" לשכבת י"ב.</p></div></div>
+          <div class="t-item"><time>14:30</time><div class="box"><b>סדר בקיאות</b> <span class="chip kodesh">קודש</span><p>עד 15:30.</p></div></div>
+          <div class="t-item"><time>16:00</time><div class="box"><b>לימודים כלליים, מגמות וספורט</b> <span class="chip chol">חול</span><p>מגמות פיזיקה, מדעי המחשב ותחזוקת מערכות.</p></div></div>
+          <div class="t-item"><time>20:00</time><div class="box"><b>משמר</b> <span class="chip kodesh">קודש</span><p>ליל חמישי בבית המדרש — לימוד, שירה ואווירה מיוחדת.</p></div></div>
+          <div class="t-item"><time>21:30</time><div class="box"><b>פעילות פנימייה</b> <span class="chip life">פנימייה</span><p>סוגרים שבוע ביחד.</p></div></div>
+        </div></div>
+        <div class="pane" data-pane="fri"><div class="timeline">
+          <div class="t-item"><time>07:00</time><div class="box"><b>תפילת שחרית וסדר הלכה</b> <span class="chip kodesh">קודש</span><p>פתיחת יום שישי.</p></div></div>
+          <div class="t-item"><time>08:00</time><div class="box"><b>ארוחת בוקר</b> <span class="chip life">פנימייה</span><p>אחרי סידור חדרים ב-07:50.</p></div></div>
+          <div class="t-item"><time>08:45</time><div class="box"><b>גמרא בעיון — שיעור וסדר</b> <span class="chip kodesh">קודש</span><p>סדר בוקר מרוכז עד 11:00.</p></div></div>
+          <div class="t-item"><time>11:00</time><div class="box"><b>יציאה לשבת</b> <span class="chip life">פנימייה</span><p>חוזרים הביתה — שבת שלום!</p></div></div>
+        </div></div>
       </div>
     </div>
   </section>
@@ -80,6 +119,7 @@
     </div>
   </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
