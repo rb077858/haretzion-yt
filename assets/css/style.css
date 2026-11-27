@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 .container { width: min(1200px, 100% - 32px); margin-inline: auto; }
 
@@ -541,4 +541,9 @@ img.img-fade.img-in { opacity: 1; }
   html.gate body, html.leaving body { opacity: 1; transform: none; }
   .hero-bg, img.img-fade { opacity: 1; }
   .pane { transition: none; }
+}
+
+@media (max-width: 600px) {
+  .photo-stack .badge { inset-inline-start: 12px; bottom: -22px; font-size: 1.05rem; padding: 16px 20px; max-width: calc(100% - 24px); }
+  .photo-stack::before { inset: 14px -8px -14px 14px; }
 }
