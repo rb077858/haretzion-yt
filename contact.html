@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/favicon.png">
-  <link rel="preload" as="image" href="assets/img/logo.png?v=202611270931">
-  <script>(function(){var d=document.documentElement;try{if(!sessionStorage.getItem('hey-visited')||!('onpagereveal' in window))d.classList.add('gate')}catch(e){d.classList.add('gate')}})();</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611270931">
+  <link rel="preload" as="image" href="assets/img/logo.png?v=202611271001">
+  <script>document.documentElement.classList.add('gate');</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611271001">
 </head>
 <body>
   <div class="demo-banner" role="status"><span class="pulse"></span><span class="long">אתר דמו בלבד — אינו האתר הרשמי של ישיבת הר עציון לצעירים</span><span class="short">אתר דמו בלבד · לא האתר הרשמי</span></div>
@@ -19,58 +19,98 @@
   <section class="page-hero">
     <span class="ring r1"></span><span class="ring r2"></span>
     <div class="container">
-      <span class="eyebrow">הרשמה וקשר</span>
+      <span class="eyebrow">היכרות והרשמה · תשפ"ח</span>
       <h1>הצעד הראשון<br>לבית המדרש</h1>
-      <p>לפרטים על ימי הרשמה, ימים פתוחים ומבחני כניסה — השאירו פרטים או צרו קשר.</p>
+      <p>ערבי היכרות, שבתות היכרות, יום ההרשמה ומבדקי הגמרא — כל המועדים לשנת הלימודים הבאה במקום אחד.</p>
     </div>
     <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 C240 80 480 0 720 30 C960 60 1200 10 1440 40 V70 H0Z" fill="#fffdf8"/></svg>
+  </section>
+
+  <section class="section" style="padding-top:60px">
+    <div class="container">
+      <div class="countdown-wrap reveal">
+        <div style="position:relative;z-index:1"><small>האירוע הקרוב</small><h3 data-next-title>…</h3><p data-next-where></p></div>
+        <div class="countdown" data-countdown aria-live="off">
+          <div><b>00</b><span>ימים</span></div><div><b>00</b><span>שעות</span></div><div><b>00</b><span>דקות</span></div><div><b>00</b><span>שניות</span></div>
+        </div>
+      </div>
+
+      <div class="events">
+        <div class="event reveal  ">
+          <div class="ev-ic">👨‍👩‍👦</div><h3>ערבי היכרות להורים</h3><p>ערבי היכרות להורים יתקיימו אי"ה בחדר האוכל הקטן בישיבת הר עציון באלון שבות.</p>
+          <div class="dates"><div class="date-row" data-event-date="2026-12-22T20:30"><div class="day">22<small>דצמ׳</small></div><div>יום שלישי · 20:30</div></div><div class="date-row" data-event-date="2027-01-12T20:30"><div class="day">12<small>ינו׳</small></div><div>יום שלישי · 20:30</div></div></div>
+          <a class="btn btn-navy" href="https://forms.gle/DAyJSUjvDC2LN2dy5" target="_blank" rel="noopener">להרשמה לערב היכרות <span class="arrow">←</span></a>
+        </div>
+        <div class="event reveal d1 ">
+          <div class="ev-ic">🕯️</div><h3>שבתות היכרות לתלמידים</h3><p>בעז"ה יתקיימו שתי שבתות היכרות. ההרשמה לשבת החל מיום חמישי כ"ח בטבת (07.01) בשעה 16:00.</p>
+          <div class="dates"><div class="date-row" data-event-date="2027-01-16T20:00"><div class="day">15<small>ינו׳</small></div><div>שבת פרשת בא · ז'–ח' שבט</div></div><div class="date-row" data-event-date="2027-02-06T20:00"><div class="day">5<small>פבר׳</small></div><div>שבת פרשת משפטים · כ"ח–כ"ט שבט</div></div></div>
+          <a class="btn btn-navy" href="https://forms.gle/y3oPgfcyRkWHPr2T8" target="_blank" rel="noopener">להרשמה לשבת היכרות <span class="arrow">←</span></a>
+        </div>
+        <div class="event reveal d2 highlight">
+          <div class="ev-ic">📝</div><h3>יום ההרשמה</h3><p>ההרשמה לשנת הלימודים הבאה. ההרשמה הרשמית מתבצעת דרך מערכת הרישום של החמ"ד.</p>
+          <div class="dates"><div class="date-row" data-event-date="2027-01-26T23:00"><div class="day">26<small>ינו׳</small></div><div>יום שלישי · י"ח שבט תשפ"ז</div></div></div>
+          <a class="btn btn-navy" href="https://rishum.app/hemed" target="_blank" rel="noopener">הרשמה דרך החמ"ד <span class="arrow">←</span></a>
+        </div>
+        <div class="event reveal  ">
+          <div class="ev-ic">📚</div><h3>מבדקי גמרא וראיונות</h3><p>מבדקי גמרא לכלל התלמידים. ביום זה יתקיימו גם ראיונות למועמדים מיישובים מרוחקים; תלמידים מיישובים קרובים יזומנו לראיונות בנפרד.</p>
+          <div class="dates"><div class="date-row" data-event-date="2027-02-09T23:00"><div class="day">9<small>פבר׳</small></div><div>יום שלישי · ב' אדר א'</div></div></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cream">
+    <div class="container">
+      <div class="center">
+        <div class="kicker reveal">ביקור בישיבה</div>
+        <h2 class="h2 reveal">תלמידי כיתה ח' — בואו לבקר</h2>
+        <p class="sub reveal">לתיאום ביקור בישיבה לתלמידי כיתה ח' אפשר לפנות לאחד מהבאים:</p>
+      </div>
+      <div class="contacts">
+        <a class="contact-chip reveal " href="tel:0556895653"><span class="av">א</span><div><b>אלישע קינן</b><span>055-6895653</span></div></a>
+        <a class="contact-chip reveal d1" href="tel:0543844979"><span class="av">י</span><div><b>יאיר אפשטיין</b><span>054-3844979</span></div></a>
+        <a class="contact-chip reveal d2" href="tel:0584277752"><span class="av">א</span><div><b>איתם הרשקוביץ</b><span>058-4277752</span></div></a>
+        <a class="contact-chip reveal d3" href="tel:0553046909"><span class="av">ז</span><div><b>זיו שלו</b><span>055-3046909</span></div></a>
+      </div>
+    </div>
   </section>
 
   <section class="section">
     <div class="container form-wrap">
       <div class="info-card reveal">
-        <h2 class="h2" style="font-size:2.2rem;margin-top:0">פרטי התקשרות</h2>
+        <h2 class="h2" style="font-size:2.2rem;margin-top:0">צרו איתנו קשר</h2>
         <p style="opacity:.75">משרד הישיבה ישמח לענות על כל שאלה.</p>
-        <div class="info-row"><span class="ic">📍</span><div><small>כתובת</small><b>אלון שבות, גוש עציון</b></div></div>
-        <div class="info-row"><span class="ic">📞</span><div><small>טלפון</small><b>02-9937300 שלוחה 0</b></div></div>
-        <div class="info-row"><span class="ic">✉️</span><div><small>דוא"ל</small><b>yt.haretzion@gmail.com</b></div></div>
-        <div class="info-row"><span class="ic">🗓️</span><div><small>הרשמה</small><b>מועדי ההרשמה לשנה הבאה יפורסמו באתר הרשמי</b></div></div>
+        <div class="info-row"><span class="ic">📍</span><div><small>כתובת</small><b>רחוב הישיבה 1, אלון שבות</b></div></div>
+        <div class="info-row"><span class="ic">📞</span><div><small>טלפון</small><b><a href="tel:029937300">02-9937300 שלוחה 0</a></b></div></div>
+        <div class="info-row"><span class="ic">✉️</span><div><small>דוא"ל</small><b><a href="mailto:yt.haretzion@gmail.com">yt.haretzion@gmail.com</a></b></div></div>
+        <div class="socials">
+          <a href="https://www.facebook.com/%D7%99%D7%A9%D7%99%D7%91%D7%AA-%D7%94%D7%A8-%D7%A2%D7%A6%D7%99%D7%95%D7%9F-%D7%9C%D7%A6%D7%A2%D7%99%D7%A8%D7%99%D7%9D-108676425017977/" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://rishum.app/hemed" target="_blank" rel="noopener">הרשמה דרך החמ"ד</a>
+          <a href="https://yt-haretzion.co.il/" target="_blank" rel="noopener">האתר הרשמי</a>
+        </div>
       </div>
 
       <form class="demo-form reveal d1">
-        <h2 class="h2" style="font-size:2rem;margin-top:0">טופס התעניינות</h2>
+        <h2 class="h2" style="font-size:2rem;margin-top:0">השאירו פרטים</h2>
         <div class="row2">
-          <div class="field"><label for="n">שם התלמיד</label><input id="n" required placeholder="ישראל ישראלי"></div>
-          <div class="field"><label for="g">כיתה נוכחית</label>
-            <select id="g"><option>ח'</option><option>ט'</option><option>י'</option></select></div>
+          <div class="field"><label for="p1">שם (הורה)</label><input id="p1" required></div>
+          <div class="field"><label for="p2">שם משפחה (הורה)</label><input id="p2" required></div>
         </div>
         <div class="row2">
-          <div class="field"><label for="p">שם ההורה</label><input id="p" required></div>
+          <div class="field"><label for="n">שם הילד</label><input id="n" required></div>
           <div class="field"><label for="t">טלפון</label><input id="t" type="tel" required placeholder="05X-XXXXXXX"></div>
         </div>
-        <div class="field"><label for="s">בית ספר נוכחי ויישוב</label><input id="s"></div>
-        <div class="field"><label for="m">מגמה מועדפת</label>
-          <select id="m"><option>עוד לא החלטתי</option><option>פיזיקה</option><option>מדעי המחשב</option><option>תחזוקת מערכות</option></select></div>
-        <div class="field"><label for="q">משהו שתרצו לשתף?</label><textarea id="q" rows="4"></textarea></div>
+        <div class="field"><label for="e">דוא"ל</label><input id="e" type="email"></div>
+        <div class="field"><label for="s">באיזה בית ספר הילד לומד כעת?</label><input id="s"></div>
         <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">שליחה <span class="arrow">←</span></button>
-        <p class="form-note">⚠️ אתר דמו — הטופס אינו שולח מידע לשום מקום.</p>
+        <p class="form-note">⚠️ אתר דמו — הטופס אינו שולח מידע. להרשמה אמיתית השתמשו בקישורים לטפסים שלמעלה.</p>
       </form>
     </div>
   </section>
 
-  <section class="section cream">
-    <div class="container center">
-      <div class="kicker reveal">שאלות נפוצות</div>
-      <h2 class="h2 reveal">לפני שנרשמים</h2>
-      <div class="cards" style="text-align:start">
-        <div class="card reveal"><div class="icon">❓</div><h3>למי מיועדת הישיבה?</h3><p>לנערים מגוש עציון ומכל רחבי הארץ שרוצים ללמוד תורה ברצינות ובשמחה.</p></div>
-        <div class="card reveal d1"><div class="icon">🏠</div><h3>האם יש פנימייה?</h3><p>כן — הישיבה פנימייתית, והתלמידים לומדים וחיים בה במהלך השבוע.</p></div>
-        <div class="card reveal d2"><div class="icon">📝</div><h3>איך מתקבלים?</h3><p>תהליך הקבלה כולל יום הרשמה, מבחן והיכרות אישית (פרטים מדויקים — מול משרד הישיבה).</p></div>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="assets/js/main.js?v=202611270931"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/pages.js?v=202611271001"></script>
+  <script src="assets/js/main.js?v=202611271001"></script>
 </body>
 </html>

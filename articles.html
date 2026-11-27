@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/favicon.png">
-  <link rel="preload" as="image" href="assets/img/logo.png?v=202611270931">
-  <script>(function(){var d=document.documentElement;try{if(!sessionStorage.getItem('hey-visited')||!('onpagereveal' in window))d.classList.add('gate')}catch(e){d.classList.add('gate')}})();</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611270931">
+  <link rel="preload" as="image" href="assets/img/logo.png?v=202611271001">
+  <script>document.documentElement.classList.add('gate');</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611271001">
 </head>
 <body>
   <div class="demo-banner" role="status"><span class="pulse"></span><span class="long">אתר דמו בלבד — אינו האתר הרשמי של ישיבת הר עציון לצעירים</span><span class="short">אתר דמו בלבד · לא האתר הרשמי</span></div>
@@ -21,50 +21,36 @@
     <div class="container">
       <span class="eyebrow">מאמרים בנושאי חינוך</span>
       <h1>מבית מדרשו<br>של ראש הישיבה</h1>
-      <p>מחשבות על חינוך, תורה ונוער — מאת הרב עמיחי גורדין.</p>
+      <p>תשעה מאמרים על חינוך, תורה, הורות ונוער — מאת הרב עמיחי גורדין. כל המאמרים במלואם.</p>
     </div>
     <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 C240 80 480 0 720 30 C960 60 1200 10 1440 40 V70 H0Z" fill="#fffdf8"/></svg>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="articles">
-        <article class="article wide reveal">
-          <div class="meta"><span class="cat">חינוך</span><span>הרב עמיחי גורדין</span></div>
-          <h3>"הצד הבהיר"</h3>
-          <p>"התסכול גדול תמיד מהסיפוק, אחרת אתה לא מחנך אמיתי", טען פעם מחנך ותיק. כל מי שבחר לעסוק בחינוך יודע שאף אחד לא פרש לפניו שטיח אדום… על הקושי, על התקווה ועל היכולת לראות את האור שבכל תלמיד.</p>
-          <a class="more" href="https://yt-haretzion.co.il/" target="_blank" rel="noopener">למאמר המלא באתר הישיבה ←</a>
-        </article>
-        <article class="article reveal">
-          <div class="meta"><span class="cat">פרשת השבוע</span><span>הרב עמיחי גורדין</span></div>
-          <h3>חשיבות המעורבות</h3>
-          <p>את פרשת בראשית חותמים פסוקים עצובים, שלא לומר מייאשים: "וַיַּרְא ה' כִּי רַבָּה רָעַת הָאָדָם בָּאָרֶץ"… מה תפקידו של האדם כשהעולם סביבו נראה אבוד?</p>
-          <a class="more" href="https://yt-haretzion.co.il/" target="_blank" rel="noopener">למאמר המלא ←</a>
-        </article>
-        <article class="article reveal d1">
-          <div class="meta"><span class="cat">חינוך</span><span>הרב עמיחי גורדין</span></div>
-          <h3>בשבח הצעירים החצופים</h3>
-          <p>על השאלות הקשות של בני הנוער, ולמה דווקא הן סימן לבית מדרש חי ובריא. מאמר שפורסם באתר כיפה.</p>
-          <a class="more" href="https://www.kipa.co.il/" target="_blank" rel="noopener">לאתר כיפה ←</a>
-        </article>
-        <article class="article reveal d2">
-          <div class="meta"><span class="cat">לזכרו</span><span>הישיבה</span></div>
-          <h3>"לעבוד קשה ולהזיע"</h3>
-          <p>מדבריו של הרב גורדין בחנוכת בית המדרש "אוהל שי" על דמותו של שי אוריאל פיזם הי"ד — מחנך ששילב תורה וחיים.</p>
-          <a class="more" href="https://www.inn.co.il/news/677467" target="_blank" rel="noopener">לכתבה בערוץ 7 ←</a>
-        </article>
-        <article class="article reveal">
-          <div class="meta"><span class="cat">מורשת</span><span>הרב עמיחי גורדין</span></div>
-          <h3>"מאה שנים לא כתבו כך על הגמרא"</h3>
-          <p>על המפעל התורני של הרב אהרן ליכטנשטיין זצ"ל, ועל המשמעות שלו עבור הדור הצעיר של לומדי התורה.</p>
-          <a class="more" href="https://etzion.haretzion.org/" target="_blank" rel="noopener">לאתר ישיבת הר עציון ←</a>
-        </article>
-      </div>
-      <p class="form-note center" style="margin-top:30px">* באתר הדמו מוצגים תקצירים; הקישורים מובילים למקורות חיצוניים.</p>
+      <div class="articles" data-article-list></div>
     </div>
   </section>
 
   <section class="section cream">
+    <div class="container center">
+      <div class="kicker reveal">בתקשורת ובעולם</div>
+      <h2 class="h2 reveal">עוד על הישיבה</h2>
+      <div class="articles" style="text-align:start">
+        <a class="article reveal" href="https://yt-haretzion.co.il/%d7%97%d7%96%d7%95%d7%9f-%d7%94%d7%99%d7%a9%d7%99%d7%91%d7%94/" target="_blank" rel="noopener" onclick="event.preventDefault();location.href='vision.html'">
+          <div class="meta"><span class="cat">חזון</span><span>הרב עמיחי גורדין</span></div>
+          <h3>חזון הישיבה המלא</h3><p>"אני חי בשני עולמות" — חמשת היסודות של הישיבה: שיהיה להם טוב, להיות בני אדם, להיות בני תורה, לתקן עולם, וטובה חכמה עם נחלה.</p><span class="more">לחזון ←</span></a>
+        <a class="article reveal d1" href="https://www.inn.co.il/news/677467" target="_blank" rel="noopener">
+          <div class="meta"><span class="cat">ערוץ 7</span><span>אלול תשפ"ה</span></div>
+          <h3>נחנך בית המדרש "אוהל שי"</h3><p>טקס חנוכת בית המדרש החדש לזכרו של שי אוריאל פיזם הי"ד, ממייסדי הישיבה.</p><span class="more">לכתבה ←</span></a>
+        <a class="article reveal d2" href="https://www.inn.co.il/news/575908" target="_blank" rel="noopener">
+          <div class="meta"><span class="cat">ערוץ 7</span><span>אלול תשפ"ב</span></div>
+          <h3>נחתמה מגילת היסוד</h3><p>ראשי ישיבת הר עציון, ראש המועצה ונשיא מכללת הרצוג חותמים על מגילת היסוד של הישיבה לצעירים.</p><span class="more">לכתבה ←</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container">
       <div class="cta reveal">
         <h2>רוצים לקבל את המאמרים למייל?</h2>
@@ -77,7 +63,9 @@
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="assets/js/main.js?v=202611270931"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/content.js?v=202611271001"></script>
+  <script src="assets/js/pages.js?v=202611271001"></script>
+  <script src="assets/js/main.js?v=202611271001"></script>
 </body>
 </html>

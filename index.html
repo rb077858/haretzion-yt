@@ -10,9 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/favicon.png">
-  <link rel="preload" as="image" href="assets/img/logo.png?v=202611270931">
-  <script>(function(){var d=document.documentElement;try{if(!sessionStorage.getItem('hey-visited')||!('onpagereveal' in window))d.classList.add('gate')}catch(e){d.classList.add('gate')}})();</script>
-  <link rel="stylesheet" href="assets/css/style.css?v=202611270931">
+  <link rel="preload" as="image" href="assets/img/logo.png?v=202611271001">
+  <script>document.documentElement.classList.add('gate');</script>
+  <link rel="stylesheet" href="assets/css/style.css?v=202611271001">
 </head>
 <body>
   <div class="demo-banner" role="status"><span class="pulse"></span><span class="long">אתר דמו בלבד — אינו האתר הרשמי של ישיבת הר עציון לצעירים</span><span class="short">אתר דמו בלבד · לא האתר הרשמי</span></div>
@@ -52,6 +52,18 @@
       </div>
     </div>
   </div>
+
+
+  <!-- REGISTRATION STRIP -->
+  <section style="padding:60px 0 0">
+    <div class="container">
+      <div class="reg-strip reveal">
+        <div class="big">26.1<small>י"ח שבט תשפ"ז</small></div>
+        <div><h3>ההרשמה לשנת הלימודים תשפ"ח</h3><p>ערבי היכרות להורים, שבתות היכרות לתלמידים ומבדקי גמרא — כל המועדים והטפסים בעמוד ההרשמה.</p></div>
+        <a href="contact.html" class="btn btn-primary">למועדים ולהרשמה <span class="arrow">←</span></a>
+      </div>
+    </div>
+  </section>
 
   <!-- ABOUT SPLIT -->
   <section class="section">
@@ -115,7 +127,8 @@
           <span class="tag">תואר שני בחינוך</span>
           <span class="tag">קצין שריון במילואים</span>
         </div>
-        <div style="margin-top:34px"><a href="staff.html" class="btn btn-navy">להכרת הצוות <span class="arrow">←</span></a></div>
+        <div style="margin-top:34px;display:flex;align-items:center;gap:22px;flex-wrap:wrap"><a href="staff.html" class="btn btn-navy">להכרת הצוות <span class="arrow">←</span></a>
+          <a href="staff.html" class="team-row" style="margin:0" aria-label="הצוות"><img src="assets/img/rav-gordin.jpg" width="768" height="768" alt=""><img src="assets/img/staff-gavriel.jpg" width="600" height="600" alt=""><img src="assets/img/staff-nitai.jpg" width="600" height="600" alt=""><img src="assets/img/staff-elishai.jpg" width="221" height="221" alt=""></a></div>
       </div>
     </div>
   </section>
@@ -131,6 +144,7 @@
         <img width="768" height="768" decoding="async" src="assets/img/rav-gordin.jpg" alt="">
         <div><b>הרב עמיחי גורדין</b><span>מתוך חזון הישיבה</span></div>
       </cite>
+      <div class="reveal d2" style="margin-top:30px"><a href="vision.html" class="btn btn-ghost">לחזון המלא <span class="arrow">←</span></a></div>
     </div>
   </section>
 
@@ -145,6 +159,15 @@
         <a href="learning.html#majors" class="major cyber reveal d1"><span class="emoji">💻</span><span class="num">02</span><h3>מדעי המחשב</h3><p>קוד, אלגוריתמים וחשיבה מערכתית — כלים לעולם של מחר.</p></a>
         <a href="learning.html#majors" class="major sys reveal d2"><span class="emoji">🔧</span><span class="num">03</span><h3>תחזוקת מערכות</h3><p>עבודה מעשית בבית המלאכה — להבין איך דברים עובדים, ולתקן.</p></a>
       </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section">
+    <div class="container">
+      <div class="center"><div class="kicker reveal">מאמרים בנושאי חינוך</div><h2 class="h2 reveal">מבית מדרשו של ראש הישיבה</h2></div>
+      <div class="articles" data-article-list="3" data-no-feature="1"></div>
+      <div class="center reveal" style="margin-top:36px"><a href="articles.html" class="btn btn-navy">לכל המאמרים <span class="arrow">←</span></a></div>
     </div>
   </section>
 
@@ -172,7 +195,9 @@
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="assets/js/main.js?v=202611270931"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/content.js?v=202611271001"></script>
+  <script src="assets/js/pages.js?v=202611271001"></script>
+  <script src="assets/js/main.js?v=202611271001"></script>
 </body>
 </html>

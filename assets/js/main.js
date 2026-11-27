@@ -2,7 +2,7 @@
 (function () {
   const root = document.documentElement;
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const LOGO = `<span class="logo-disc"><img src="assets/img/logo.png?v=202611270931" alt="" width="400" height="400"></span>`;
+  const LOGO = `<span class="logo-disc"><img src="assets/img/logo.png?v=202611271001" alt="" width="400" height="400"></span>`;
 
   const pages = [
     ["index.html", "ראשי"],
@@ -11,7 +11,7 @@
     ["learning.html", "לימודים וחיים"],
     ["articles.html", "מאמרים"],
   ];
-  const here = location.pathname.split("/").pop() || "index.html";
+  const here = ({ "article.html": "articles.html", "vision.html": "about.html" })[location.pathname.split("/").pop()] || location.pathname.split("/").pop() || "index.html";
 
   // ---------- nav ----------
   const nav = document.createElement("header");
@@ -51,14 +51,16 @@
         </div>
         <div>
           <h4>ניווט</h4>
-          <ul>${pages.map(([h, t]) => `<li><a href="${h}">${t}</a></li>`).join("")}<li><a href="contact.html">הרשמה וקשר</a></li></ul>
+          <ul>${pages.map(([h, t]) => `<li><a href="${h}">${t}</a></li>`).join("")}<li><a href="vision.html">חזון הישיבה</a></li><li><a href="contact.html">הרשמה וקשר</a></li></ul>
         </div>
         <div>
           <h4>יצירת קשר</h4>
           <ul>
-            <li>📍 אלון שבות, גוש עציון</li>
+            <li>📍 רחוב הישיבה 1, אלון שבות</li>
             <li>📞 02-9937300 שלוחה 0</li>
             <li>✉️ yt.haretzion@gmail.com</li>
+            <li><a href="https://www.facebook.com/%D7%99%D7%A9%D7%99%D7%91%D7%AA-%D7%94%D7%A8-%D7%A2%D7%A6%D7%99%D7%95%D7%9F-%D7%9C%D7%A6%D7%A2%D7%99%D7%A8%D7%99%D7%9D-108676425017977/" target="_blank" rel="noopener">👍 הישיבה בפייסבוק</a></li>
+            <li><a href="https://rishum.app/hemed" target="_blank" rel="noopener">📝 הרשמה דרך החמ"ד</a></li>
           </ul>
         </div>
       </div>
@@ -72,11 +74,15 @@
 
   // ---------- smooth scroll (Lenis) ----------
   let lenis = null;
-  if (!reduced && window.Lenis) {
+  // Lenis loads with `defer` (never blocks the first paint); start it as soon as it's there.
+  const startLenis = () => {
+    if (lenis || reduced || !window.Lenis) return;
     lenis = new Lenis({ duration: 1.15, easing: (t) => 1 - Math.pow(1 - t, 4), smoothWheel: true });
     const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
     requestAnimationFrame(raf);
-  }
+  };
+  startLenis();
+  if (!lenis) document.addEventListener("DOMContentLoaded", startLenis, { once: true });
   const OFFSET = -110;
   const scrollToEl = (el, immediate) => {
     if (lenis) lenis.scrollTo(el, { offset: OFFSET, immediate });
